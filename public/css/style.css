@@ -24,6 +24,7 @@ desktop = 4.8rem */
 html {
   font-size: 62.5%;
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -132,8 +133,8 @@ Header Section Start
 } */ */
 .wrapper{
   position:absolute;
-  top:0rem;
-  left:0rem;
+  top:100px;
+  left:100px;
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -344,6 +345,7 @@ Hero  Section Start
 
 .section-hero {
   background: var(--bg);
+  position: relative;
 }
 
 .section-hero-data {
@@ -369,8 +371,9 @@ Hero  Section Start
 
 .hero-para {
   margin-top: 1.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   max-width: 60rem;
+  text-align:justify;
 }
 
 .section-hero-image {
@@ -1173,6 +1176,32 @@ Media Queries Section
   .section-footer .grid-four-col {
     grid-template-columns: 1fr 1fr;
   }
+  .section-freelancer h2{
+    font-size:3rem;
+  }
+  .contact-container .grid-two-col{
+    grid-template-columns:1fr;
+  }
+  .section-contact-main input[type="submit"]
+  {
+    max-width:40%;
+  }
+  .contact-container{
+    padding: 0.3.2rem;
+  }
+  /* footer-section */
+  .section-footer .f-about,
+  .section-footer .f-address{
+    grid-column:1/-1;
+  }
+  .section-footer .f-linksa a ,
+  .section-footer .f-services a
+  {
+    font-size:10px;
+    width:45%;
+  }
+  
+
 }
 
 /* Below 780px  */
@@ -1197,7 +1226,7 @@ Media Queries Section
     text-align: center;
   }
   .hero-para {
-    text-align: center;
+    text-align: justify;
     margin-top: 2rem;
   }
 
@@ -1229,8 +1258,11 @@ Media Queries Section
 
 /* Below 560px  */
 @media (max-width: 35em) {
+  .container{
+    max-width:40rem;
+  }
   .header {
-    padding: 0 3rem;
+    padding: 0 3.2rem;
   }
 
   .header .logo {
@@ -1265,7 +1297,7 @@ Media Queries Section
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom:3rem;
+  margin-bottom:4rem;
 }
 .Certificate-content{
   width:50%;
